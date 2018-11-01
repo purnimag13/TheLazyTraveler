@@ -1,4 +1,4 @@
-# TheLazyTraveller
+# TheLazyTraveler
 What is the problem? 
 
 Organizing and planning a vacation is very difficult. You have to think about flights, car rentals, locations, prices, and many more things to make your vacation everything you want it to be. Some people enjoy planning those types of things, but there are some people who don’t like that aspect of vacationing. We want to solve that problem by creating a website that will do all of the vacation planning for you. All you have to do is tell us where you want to go and how much you want to spend. This website will alleviate the stress of looking up available hotels, activities in the area to do, foods to try, and other things of that nature that a lazy traveler wouldn’t want to handle.  
