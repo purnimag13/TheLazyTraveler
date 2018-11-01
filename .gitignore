@@ -1,2 +1,12 @@
-#Don't track content of these folders
-nbproject/private/private.properties
+# Created by https://www.gitignore.io/api/netbeans
+# Edit at https://www.gitignore.io/?templates=netbeans
+
+### NetBeans ###
+**/nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# End of https://www.gitignore.io/api/netbeans
