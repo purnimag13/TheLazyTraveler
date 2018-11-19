@@ -1,6 +1,6 @@
 /*
- * Created by Tara Laughlin on 2018.11.19  * 
- * Copyright © 2018 Tara Laughlin. All rights reserved. * 
+ * Created by Purnima Ghosh on 2018.11.19  * 
+ * Copyright © 2018 Purnima Ghosh. All rights reserved. * 
  */
 package edu.vt.EntityBeans;
 
@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author taralaughlin
+ * @author purni
  */
 @Entity
 @Table(name = "SavedTrips")
@@ -83,13 +83,15 @@ public class SavedTrips implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Lob
+    @Size(min = 1, max = 16777215)
     @Column(name = "restaurants")
-    private Object restaurants;
+    private String restaurants;
     @Basic(optional = false)
     @NotNull
     @Lob
+    @Size(min = 1, max = 16777215)
     @Column(name = "events")
-    private Object events;
+    private String events;
 
     public SavedTrips() {
     }
@@ -98,7 +100,7 @@ public class SavedTrips implements Serializable {
         this.id = id;
     }
 
-    public SavedTrips(Integer id, String startLocation, String location, Date startDate, Date endDate, double flightCost, String hotelName, double hotelCost, Object restaurants, Object events) {
+    public SavedTrips(Integer id, String startLocation, String location, Date startDate, Date endDate, double flightCost, String hotelName, double hotelCost, String restaurants, String events) {
         this.id = id;
         this.startLocation = startLocation;
         this.location = location;
@@ -175,19 +177,19 @@ public class SavedTrips implements Serializable {
         this.hotelCost = hotelCost;
     }
 
-    public Object getRestaurants() {
+    public String getRestaurants() {
         return restaurants;
     }
 
-    public void setRestaurants(Object restaurants) {
+    public void setRestaurants(String restaurants) {
         this.restaurants = restaurants;
     }
 
-    public Object getEvents() {
+    public String getEvents() {
         return events;
     }
 
-    public void setEvents(Object events) {
+    public void setEvents(String events) {
         this.events = events;
     }
 
